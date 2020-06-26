@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/joker"
+    >
+
+    <TextView
+        android:id="@+id/mytextView"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ggg"
+        android:text="Grade calculator"
+        android:textAlignment="center"
+        android:textColor="#F80303"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.106" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="218dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/xx"
+        android:ems="10"
+        android:hint="Quizes %15"
+        android:inputType="textPersonName"
+        android:textColor="#FF0505"
+        android:textColorHint="#FF0000"
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mytextView" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:text=""
+        android:textColor="#FF0000"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="@+id/reset"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.407"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.026" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="218dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/xx"
+        android:ems="10"
+        android:hint="Homework %25"
+        android:inputType="textPersonName"
+        android:textColor="#FD0101"
+        android:textColorHint="#FA0000"
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText1" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="218dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/xx"
+        android:ems="10"
+        android:hint="Mid terms 30%"
+        android:inputType="textPersonName"
+        android:textColor="#FF0101"
+        android:textColorHint="#FF0000"
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="218dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/xx"
+        android:ems="10"
+        android:hint="Final 30%"
+        android:inputType="textPersonName"
+        android:textColor="#FF0000"
+        android:textColorHint="#F80000"
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText3" />
+
+    <Button
+        android:id="@+id/cal"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#EF0303"
+        android:text="CALCULATE"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#AE5656"
+        android:textColorHint="#F30000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.708"
+        app:layout_constraintStart_toStartOf="@id/editText4"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.974" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#EF0303"
+        android:text="RESET"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#AE5656"
+        android:textColorHint="#F30000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.068"
+        app:layout_constraintStart_toStartOf="@id/editText4"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.974" />
+
+    <TextView
+        android:id="@+id/textViewCal"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/xx"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#4CAF50"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+
+        android:id="@+id/textViewCal2"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#FFC107"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+
+        android:id="@+id/textViewCal3"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#00E2FF"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+    <TextView
+
+        android:id="@+id/textViewCal4"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#00FF0A"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+
+        android:id="@+id/textViewCal5"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#FF0000"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
